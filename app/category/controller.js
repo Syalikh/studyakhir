@@ -17,7 +17,7 @@ const store = async(req, res, next) => {
 
         next(err);
     }
-}
+};
 
 const update = async(req, res, next) => {
     try {
@@ -35,7 +35,7 @@ const update = async(req, res, next) => {
 
     next(err)
     }
-}
+};
 
 const destroy = async(req, res, next) => {
     try {
@@ -52,7 +52,7 @@ const destroy = async(req, res, next) => {
 
     next(err);
     }
-}
+};
 
 const index = async(req, res, next) => {
     try {
@@ -61,11 +61,11 @@ const index = async(req, res, next) => {
     }catch(err) {
     next(err);
     }
-}
+};
 
 module.exports = {
     store,
     update,
     destroy,
     index
-}
+};
